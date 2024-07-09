@@ -1,0 +1,222 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Portfolio Website</title>
+    
+    <link rel="stylesheet" href="style.css" />
+    
+    <script src="https://kit.fontawesome.com/e6b8371d90.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo s.png" alt="logo image" class="logo" />
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#works">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>
+                    Hi, I'm <span>Shrijeeta</span> <br />
+                    Dutta from Kolkata.
+                </h1>
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="user.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Shrijeeta Dutta, pursuing computer science and
+                        engineering as a degree, also a dedicated and
+                        hardworking student with a passion for continuous
+                        learning and self-improvement. My enthusiasm for
+                        taking on new challenges and acquiring new skills
+                        drives me to stay ahead in a rapidly changing
+                        environment.
+                        Possessing a bright and positive personality, I thrive in
+                        collaborative settings and bring energy and motivation
+                        to my team. My ability to adapt quickly and my
+                        eagerness to learn ensure that I can effectively tackle
+                        any task or project, always aiming to deliver
+                        outstanding results. I believe in the power of a positive
+                        attitude and strive to inspire and uplift those around me.
+                        Lastly, as a person I really enjoy dancing, travelling and
+                        music as these things boosts my creativity and gives
+                        me different perspectives to explore from..</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    
+                    
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web app development</li>
+                        
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023 - 2023</span><br>UI/UX Design Course </li>
+                            <li><span>2024 - 2024</span><br>Internship On Web development at Bharat Intern.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019</span><br>Budge Budge Institute Of Technology - Diploma</li>
+                            <li><span>2025</span><br>Coochbehar Government Engineering Colege - B.TECH </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Web development is the work involved in developing a website for the Internet (World Wide Web) or an intranet (a private network).Web development can range from developing a simple single static page of plain text to complex web applications, electronic businesses, and social network services. A more comprehensive list of tasks to which Web development commonly refers, may include Web engineering, Web design, Web content development, client liaison, client-side/server-side scripting, Web server and network security configuration, and e-commerce development.
+
+                        .</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-pen-nib"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>UI stands for User Interface, while UX stands for User Experience. Here, the user interface design (or UI) focuses on the presentation and look of the application. Besides, it improves the interactivity of the application by adding visual elements like colors, layout, screens, buttons, text, and many more. On the other hand, user experience design (or UX) involves direct interaction and experience of the user with the application. It enhances the overall experience of the user when they use the application. In other words, the UX design frame and structures all the visual elements properly to improve user experience.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>Time Managment</h2>
+                    <p>Time management is the process of managing time effectively and efficiently so that an individual can allocate the right amount of time for performing the right activity. In simpler terms, it’s the ability to use time productively..</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+    <div id="works">
+        <div class="container">
+            <h1 class="sub-title">My Works</h1>
+            <div class="works-list">
+                <div class="work">
+                    <img src="work-1.png" alt="work-1">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Of course, it isn’t only about the total number of users on the host of social media apps out there. It’s also whether the social networking site is a right fit for your business and you.!</p>
+                        <a href="#"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-2.png" alt="work-2">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>With the Spotify music and podcast app, you can play millions of songs, albums and original podcasts for free. Stream music and podcasts, discover albums, playlists or even single songs for free on your mobile or tablet. Subscribe to Spotify Premium to download and listen offline wherever you are.
+
+                            !</p>
+                        <a href="#"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-3.png" alt="work-3">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>Each year we drop a lot of features that make life easier for everyday Indians. From building new ways to shop with Vibes, helping you find answers through Flippi - our chatbot, launching personal loans with easy EMIs, expanding our categories to Home Services, Vehicles, E-books, and more - we truly believe we outdid ourselves this year!</p>
+                        <a href="#"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>shrijeetadutta6888@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone-flip"></i>+000 000 000</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="assets/my-cv.pdf" class="btn btn2" download>Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+       
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemeu.style.right = "-200px";
+        }
+
+    </script>
+</body>
+
+</html>
